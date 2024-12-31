@@ -1,10 +1,9 @@
+layout: default
+title: Personal Website
+
 # What is the Content Creation Kit?
 
 Utilize our comprehensive asset libraries, with animated characters and environments to replicate real-life experiences in VR. Add interactive learning mechanics: multiple-choice questions, pop-ups, sorting questions, object drag and drop, and more.
-
-{/* copy from the marketing team */}
-
-<br></br>
 
 <iframe
   width="560"
