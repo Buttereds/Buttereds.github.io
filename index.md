@@ -11,4 +11,4 @@ This is a basic website using GitHub Pages and Markdown.
 
 ## Explore More
 - [About](about.md)
-- [My Blog](blog)
+- [Contact](contact.md)
