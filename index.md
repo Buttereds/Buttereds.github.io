@@ -1,13 +1,14 @@
-# Welcome to My GitHub Website
+---
+title: "Home"
+layout: default
+---
 
-This is a simple website built using **Markdown** and hosted with GitHub Pages.
+# Welcome to My GitHub Pages Site!
 
-## About Me
-- 🔭 I’m currently working on web development.
-- 🌱 I’m learning GitHub Pages.
+This is a basic website using GitHub Pages and Markdown.
 
-## Projects
-1. [Project 1](https://github.com/your-username/project1)
-2. [Project 2](https://github.com/your-username/project2)
+![An example image](assets/example.png)
 
-[Learn More](https://github.com/)
+## Explore More
+- [About](about.md)
+- [My Blog](blog)

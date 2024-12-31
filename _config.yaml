@@ -1,1 +1,5 @@
+title: My GitHub Pages Site
+description: A simple website using GitHub Pages
 theme: minima
+author: Alex Burnie
+markdown: kramdown
