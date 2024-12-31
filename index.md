@@ -1,13 +1,13 @@
-# What is the Content Creation Kit?
+# Welcome to My GitHub Website
 
-Utilize our comprehensive asset libraries, with animated characters and environments to replicate real-life experiences in VR. Add interactive learning mechanics: multiple-choice questions, pop-ups, sorting questions, object drag and drop, and more.
+This is a simple website built using **Markdown** and hosted with GitHub Pages.
 
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/-dghZnE45Io?si=DZs31RkLAzf3gPBX"
-  title="YouTube video player"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowFullScreen="true"
-></iframe>
+## About Me
+- 🔭 I’m currently working on web development.
+- 🌱 I’m learning GitHub Pages.
+
+## Projects
+1. [Project 1](https://github.com/your-username/project1)
+2. [Project 2](https://github.com/your-username/project2)
+
+[Learn More](https://github.com/)
