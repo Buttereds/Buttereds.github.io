@@ -4,35 +4,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js" defer></script>
     <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            background-color: #ff4500;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background-color: #ff6347;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-button {
+            background-color: #ff4500;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        section {
+            margin: 0px 0;
+        }
+
+        .banner {
+            background-color: #ff4500;
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .banner h2 {
+            margin: 0;
+        }
+
+        .banner p {
+            margin: 5px 0 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        a:hover {
+            color: #ff4500;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <h1>Welcome to My Projects</h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+
+            <div class="dropdown">
+                <button class="dropdown-button">Projects</button>
+                <div class="dropdown-content">
+                    <a href="cck.html">Content Creation Kit (CCK) - Unity Tool</a>
+                    <a href="bsnw.html">Bag Search And Wanding - VR</a>
+                    <a href="coaching.html">Coaching Conversation - VR</a>
+                    <a href="dib.html">Diversity, Inclusion and Belonging - VR</a>
+                    <a href="empowered.html">Empowered Reality - VR</a>
+                    <a href="financial.html">Financial Literacy - 2D</a>
+                    <a href="focus.html">Focus - 2D</a>
+                    <a href="teamwork.html">Teamwork - 2D</a>
+                    <a href="timemanagement.html">Time Management - 2D</a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <section>
-        <img src="assets/example.png" alt="An example image">
+    <section class="banner">
+        <h2>Explore Projects</h2>
+        <p>Click to learn more about each project</p>
     </section>
 
     <section>
-        <h2>Explore Projects</h2>
-
         <h3>Unity Tool</h3>
-        <li><a href="cck.html">Content Creation Kit (CCK)</a></li>
+        <ul>
+            <li><a href="cck.html">Content Creation Kit (CCK)</a></li>
+        </ul>
 
         <h3>VR Projects</h3>
-        <li><a href="bsnw.html">Bag Search And Wanding</Search></a></li>
-        <li><a href="coaching.html">Coaching Conversation</a></li>
-        <li><a href="dib.html">Diversity,Inclusion and Belonging</a></li>
-        <li><a href="empowered.html">Empowered Reality</a></li>
+        <ul>
+            <li><a href="bsnw.html">Bag Search And Wanding</a></li>
+            <li><a href="coaching.html">Coaching Conversation</a></li>
+            <li><a href="dib.html">Diversity, Inclusion and Belonging</a></li>
+            <li><a href="empowered.html">Empowered Reality</a></li>
+        </ul>
 
         <h3>2D Projects</h3>
-        <li><a href="financial.html">Financial Literacy</a></li>
-        <li><a href="focus.html">Focus</a></li>
-        <li><a href="teamwork.html">Teamwork</a></li>
-        <li><a href="timemanagement.html">Time Management</a></li>
+        <ul>
+            <li><a href="financial.html">Financial Literacy</a></li>
+            <li><a href="focus.html">Focus</a></li>
+            <li><a href="teamwork.html">Teamwork</a></li>
+            <li><a href="timemanagement.html">Time Management</a></li>
+        </ul>
     </section>
 </body>
 

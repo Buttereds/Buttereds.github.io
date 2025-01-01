@@ -1,92 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
     <title>Coaching Conversation</title>
-    <style>
-        /* Carousel Styles */
-        #carousel-container {
-            width: 800px;
-            margin: 20px auto;
-            padding: 15px;
-            background-color: #333; /* Dark grey background */
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            text-align: center;
-        }
-
-        #main-content {
-            width: 100%;
-            height: 400px;
-            border-radius: 5px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            margin-bottom: 10px;
-        }
-
-        #main-image, #main-video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        #main-video {
-            display: none;
-        }
-
-        #thumbnails-container {
-            display: flex;
-            gap: 3px;
-            overflow-x: auto;
-            padding: 5px 0;
-            scrollbar-width: thin; /* For Firefox */
-            scrollbar-color: #888 transparent;
-        }
-
-        #thumbnails-container::-webkit-scrollbar {
-            height: 6px;
-        }
-
-        #thumbnails-container::-webkit-scrollbar-thumb {
-            background-color: #888;
-            border-radius: 3px;
-        }
-
-        #thumbnails-container::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        .thumbnail {
-            width: 120px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 3px;
-            cursor: pointer;
-            transition: transform 0.2s ease-in-out;
-            border: 2px solid transparent;
-        }
-
-        .thumbnail.selected {
-            border-color: #ff4500;
-        }
-
-        .thumbnail:hover {
-            transform: scale(1.05);
-        }
+    <style>   
     </style>
 </head>
+
 <body>
     <header>
         <h1>Coaching Conversation</h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+
+            <div class="dropdown">
+                <button class="dropdown-button">Projects</button>
+                <div class="dropdown-content">
+                    <a href="cck.html">Content Creation Kit (CCK) - Unity Tool</a>
+                    <a href="bsnw.html">Bag Search And Wanding - VR</a>
+                    <a href="coaching.html">Coaching Conversation - VR</a>
+                    <a href="dib.html">Diversity, Inclusion and Belonging - VR</a>
+                    <a href="empowered.html">Empowered Reality - VR</a>
+                    <a href="financial.html">Financial Literacy - 2D</a>
+                    <a href="focus.html">Focus - 2D</a>
+                    <a href="teamwork.html">Teamwork - 2D</a>
+                    <a href="timemanagement.html">Time Management - 2D</a>
+                </div>
+            </div>
+        </div>
     </header>
+
+    <section class="banner">
+        <h2>Coaching Conversation</h2>
+        <p>An immersive VR experience to practice coaching skills</p>
+    </section>
 
     <section>
         <h2>About Project</h2>
-        <p>The SkillsVR coaching conversations module is a conversation-based and fully immersive VR training experience. Throughout the module, the learner plays the role of a contact center manager,
-             receiving coaching and feedback from a virtual coach. The learner will engage in preparation activities, conversation, and review by interacting with multiple choice questions,
-              sorting questions, and verbal and visual knowledge checks.
-        </p>
+        <p>The SkillsVR coaching conversations module is a conversation-based and fully immersive VR training experience. Throughout the module, the learner plays the role of a contact center manager, receiving coaching and feedback from a virtual coach.</p>
     </section>
 
     <section>
@@ -96,7 +51,6 @@
         </ul>
     </section>
 
-    <!-- Carousel Section -->
     <div id="carousel-container">
         <div id="main-content">
             <img id="main-image" src="assets/CCK/CCK%201.png" alt="Main Content">
@@ -116,7 +70,6 @@
     </div>
 
     <script>
-        // Define the image and video paths
         const imagePaths = [
             "assets/CCK/CCK%201.png",
             "assets/CCK/CCK%202.png",
@@ -124,21 +77,15 @@
             "assets/CCK/CCK%204.png"
         ];
 
-        // Get main elements and thumbnails
         const mainImage = document.getElementById('main-image');
         const mainVideo = document.getElementById('main-video');
         const thumbnails = document.querySelectorAll('.thumbnail');
 
-        // Add click event listener to thumbnails
         thumbnails.forEach((thumbnail) => {
             thumbnail.addEventListener('click', () => {
-                // Remove selected class from all thumbnails
                 thumbnails.forEach((thumb) => thumb.classList.remove('selected'));
-
-                // Add selected class to the clicked thumbnail
                 thumbnail.classList.add('selected');
 
-                // Determine the type of content (image or video)
                 const type = thumbnail.getAttribute('data-type');
                 if (type === 'video') {
                     mainImage.style.display = 'none';
@@ -149,11 +96,12 @@
                     mainVideo.style.display = 'none';
                     mainVideo.pause();
                     const index = thumbnail.getAttribute('data-index');
-                    mainImage.src = imagePaths[index]; // Change the main image
-                    mainImage.alt = `Main Image ${parseInt(index) + 1}`; // Update alt text
+                    mainImage.src = imagePaths[index];
+                    mainImage.alt = `Main Image ${parseInt(index) + 1}`;
                 }
             });
         });
     </script>
 </body>
+
 </html>
