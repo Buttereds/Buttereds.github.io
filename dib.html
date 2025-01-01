@@ -100,12 +100,19 @@
                 const type = thumbnail.getAttribute('data-type');
                 if (type === 'video') {
                     mainImage.style.display = 'none';
-                    mainVideo.style.display = 'block';
-                    mainVideo.play();
+
+                    if(mainVideo)
+                    {
+                        mainVideo.style.display = 'block';
+                        mainVideo.play();
+                    }
                 } else {
                     mainImage.style.display = 'block';
-                    mainVideo.style.display = 'none';
-                    mainVideo.pause();
+                    if(mainVideo)
+                    {
+                        mainVideo.style.display = 'none';
+                        mainVideo.pause();
+                    }
                     const index = thumbnail.getAttribute('data-index');
                     mainImage.src = imagePaths[index]; // Change the main image
                     mainImage.alt = `Main Image ${parseInt(index) + 1}`; // Update alt text

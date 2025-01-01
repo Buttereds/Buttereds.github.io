@@ -1,6 +1,0 @@
-The SkillsVR coaching conversations module is a conversation-based and fully immersive VR training experience. Throughout the module, the learner plays the role of a contact center manager, receiving coaching and feedback from a virtual coach. The learner will engage in preparation activities, conversation, and review by interacting with multiple choice questions, sorting questions, and verbal and visual knowledge checks.
-
-https://skillsvr.com/modules/coaching-conversations
-
-https://youtu.be/7F67GaG_zBM
-
