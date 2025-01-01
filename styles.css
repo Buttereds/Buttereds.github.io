@@ -7,15 +7,21 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
+    background-image: url('assets/bannerbackground.jpg');  /* Replace with your image path */
+    background-size: cover;  /* Ensures the image covers the header without stretching */
+    background-position: center;  /* Centers the image */
+    height: 300px;  /* Set a fixed height for the banner */
+    width: 100%;  /* Make the banner full-width */
+    color: white;  /* Set text color for visibility */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: center;  /* Centers the text vertically */
+    justify-content: center;  /* Centers the text horizontally */
+    text-align: center;  /* Optional: Ensures the text is centered */
 }
 
+/* Optional: Style for the title */
 header h1 {
+    font-size: 2rem;
     margin: 0;
 }
 
@@ -27,30 +33,18 @@ header h1 {
 .nav-links a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 12px 16px;
     margin: 0 10px;
-    background-color: #ff4500;
     border-radius: 5px;
+    background-color: #4CAF50;
 }
 
 .nav-links a:hover {
-    background-color: #ff6347;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.dropdown-button {
-    background-color: #ff4500;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: #45a049;
 }
 
 .banner {
-    background-color: #ff4500;
+    background-color: #2600ff;
     color: white;
     padding: 20px;
     margin-bottom: 20px;
@@ -127,7 +121,7 @@ header h1 {
 }
 
 .thumbnail.selected {
-    border-color: #ff4500;
+    border-color: #2600ff;
 }
 
 .thumbnail:hover {
@@ -145,7 +139,7 @@ header h1 {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #ffffff;
+    background-color: #303030;
     min-width: 200px; /* Increased the width */
     max-width: 100vw;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -179,7 +173,7 @@ header h1 {
 
 /* Hover effect on links */
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #45a049;
     padding-left: 24px; /* Subtle left padding on hover */
 }
 
@@ -214,5 +208,24 @@ a {
 }
 
 a:hover {
-    color: #ff4500;
+    color: #2600ff;
+}
+
+.text-container {
+    width: 800px; /* Same width as carousel */
+    margin: 20px auto; /* Centered on the page */
+    padding: 15px;
+    background-color: #f9f9f9; /* Optional: Background color for better visibility */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Shadow for design */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Center-aligned text inside the container */
+.text-container.centered {
+    text-align: center;
+}
+
+/* Left-aligned text inside the container */
+.text-container.left-aligned {
+    text-align: left;
 }
