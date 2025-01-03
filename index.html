@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
-    <title>Home</title>
+    <title>Alex B Projects</title>
     <style>    
 
     </style>
@@ -22,7 +22,7 @@
                 <button class="dropdown-button">Projects</button>
                 <div class="dropdown-content">
                     <a href="cck.html">Content Creation Kit (CCK) - Unity Tool</a>
-                    <a href="bsnw.html">Bag Search And Wanding - VR</a>
+                    <a href="bsnw.html">Bag Search And Wanding - VR</a> 
                     <a href="coaching.html">Coaching Conversation - VR</a>
                     <a href="dib.html">Diversity, Inclusion and Belonging - VR</a>
                     <a href="empowered.html">Empowered Reality - VR</a>
@@ -35,33 +35,80 @@
         </div>
     </header>
 
-    <section class="banner">
+    <!-- <section class="banner">
         <h2>Explore Projects</h2>
         <p>Click to learn more about each project</p>
-    </section>
+    </section> -->
 
-    <section>
-        <h3>Unity Tool</h3>
-        <ul>
-            <li><a href="cck.html">Content Creation Kit (CCK)</a></li>
-        </ul>
+    <h2 class="explore-heading">Explore Projects</h2>
+    <div class="tile-container">
+        <!-- Repeat this tile for multiple entries -->
+        <div class="tile">
+            <img src="assets/CCK/CCK 1.png" alt="Tile Image">
+            <h2 class="tile-title">Content Creation Kit</h2>
+            <p class="description">Codeless Unity Tool built for SkillsVR. Allows non-developers to build VR Modules.</p>
+            <a href="cck.html" class="more-button">More</a>
+        </div>
+        <div class="tile">
+            <img src="assets/BagSearchAndWanding/BSNW1.png" alt="Tile Image">
+            <h2 class="tile-title">Bag Search And Wanding</h2>
+            <p class="description">An immersive VR experience to practice security skills</p>
+            <a href="bsnw.html" class="more-button">More</a>
+        </div>
+        <div class="tile">
+            <img src="assets/CCK/CCK 2.png" alt="Tile Image">
+            <h2 class="tile-title">Coaching Conversation</h2>
+            <p class="description">An immersive VR experience to practice coaching skills</p>
+            <a href="coaching.html" class="more-button">More</a>
+        </div>
+        <div class="tile">
+            <img src="assets/CCK/CCK 3.png" alt="Tile Image">
+            <h2 class="tile-title">Diversity,Inclusion and Belonging</h2>
+            <p class="description">An immersive VR experience to practice DIB skills</p>
+            <a href="dib.html" class="more-button">More</a>
+        </div>
+        <div class="tile">
+            <img src="assets/CCK/CCK 4.png" alt="Tile Image">
+            <h2 class="tile-title">Empowered Reality</h2>
+            <p class="description">An immersive VR experience to learn about VR</p>
+            <a href="empowered.html" class="more-button">More</a>
+        </div>
+        <div class="tile">
+            <img src="assets/FinancialLiteracy/FL 1.png" alt="Tile Image">
+            <h2 class="tile-title">Financial Literacy</h2>
+            <p class="description">An immersive 2D experience to practice financial literacy skills</p>
+            <a href="financial.html" class="more-button">More</a>
+        </div>
+        <div class="tile">
+            <img src="assets/Focus/F 1.png" alt="Tile Image">
+            <h2 class="tile-title">Focus</h2>
+            <p class="description">An immersive VR experience to practice soft skill focus</p>
+            <a href="focus.html" class="more-button">More</a>
+        </div>
+        <div class="tile">
+            <img src="assets/Teamwork/TW 1.png" alt="Tile Image">
+            <h2 class="tile-title">Teamwork</h2>
+            <p class="description">An immersive VR experience to practice soft skill teamwork</p>
+            <a href="teamwork.html" class="more-button">More</a>
+        </div>
+        <div class="tile">
+            <img src="assets/TimeManagement/TM 1.png" alt="Tile Image">
+            <h2 class="tile-title">Time Management</h2>
+            <p class="description">An immersive VR experience to practice soft skill Time Management</p>
+            <a href="timemanagement.html" class="more-button">More</a>
+        </div>
+    </div>
 
-        <h3>VR Projects</h3>
-        <ul>
-            <li><a href="bsnw.html">Bag Search And Wanding</a></li>
-            <li><a href="coaching.html">Coaching Conversation</a></li>
-            <li><a href="dib.html">Diversity, Inclusion and Belonging</a></li>
-            <li><a href="empowered.html">Empowered Reality</a></li>
-        </ul>
-
-        <h3>2D Projects</h3>
-        <ul>
-            <li><a href="financial.html">Financial Literacy</a></li>
-            <li><a href="focus.html">Focus</a></li>
-            <li><a href="teamwork.html">Teamwork</a></li>
-            <li><a href="timemanagement.html">Time Management</a></li>
-        </ul>
-    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const tiles = document.querySelectorAll(".tile");
+            tiles.forEach((tile, index) => {
+                setTimeout(() => {
+                    tile.classList.add("visible");
+                }, index * 100); // Delay each tile slightly for a staggered effect
+            });
+        });
+    </script>
 </body>
 
 </html>
