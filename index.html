@@ -7,38 +7,35 @@
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
     <title>Alex B Projects</title>
-    <style>    
-
-    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to My Projects</h1>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            
-            <div class="dropdown">
-                <button class="dropdown-button">Projects</button>
-                <div class="dropdown-content">
-                    <a href="cck.html">Content Creation Kit (CCK) - Unity Tool</a>
-                    <a href="bsnw.html">Bag Search And Wanding - VR</a> 
-                    <a href="coaching.html">Coaching Conversation - VR</a>
-                    <a href="dib.html">Diversity, Inclusion and Belonging - VR</a>
-                    <a href="empowered.html">Empowered Reality - VR</a>
-                    <a href="financial.html">Financial Literacy - 2D</a>
-                    <a href="focus.html">Focus - 2D</a>
-                    <a href="teamwork.html">Teamwork - 2D</a>
-                    <a href="timemanagement.html">Time Management - 2D</a>
-                </div>
+    <header class="main-header">
+        <div class="left-section">
+            <img src="assets/CatWhite.png" alt="Icon" class="icon">
+            <div>
+                <span class="name">Alex B</span>
+                <span class="subtitle">Game Developer & VR Enthusiast</span>
             </div>
         </div>
+        <div class="middle-section">
+            <input type="checkbox" id="toggle" class="toggleCheckbox" />
+            <label for="toggle" class='toggleContainer'>
+              <div>Work</div>   
+              <div>Personal</div>
+            </label>
+        </div>
+        <div class="right-section">
+            <span>LinkedIn:</span>
+            <a href="cck.html" target="_blank" class="icon-link">
+                <img src="assets/Redirect.png" alt="LinkedIn">
+            </a>
+            <span>Resume:</span>
+            <a href="cck.html" target="_blank" class="icon-link">
+                <img src="assets/Redirect.png" alt="Resume">
+            </a>
+        </div>
     </header>
-
-    <!-- <section class="banner">
-        <h2>Explore Projects</h2>
-        <p>Click to learn more about each project</p>
-    </section> -->
 
     <h2 class="explore-heading">Explore Projects</h2>
     <div class="tile-container">
@@ -46,7 +43,8 @@
         <div class="tile">
             <img src="assets/CCK/CCK 1.png" alt="Tile Image">
             <h2 class="tile-title">Content Creation Kit</h2>
-            <p class="description">Codeless Unity Tool built for SkillsVR. Allows non-developers to build VR Modules.</p>
+            <p class="description">Codeless Unity Tool built for SkillsVR. Allows non-developers to build VR Modules.
+            </p>
             <a href="cck.html" class="more-button">More</a>
         </div>
         <div class="tile">

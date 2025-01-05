@@ -3,28 +3,151 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #000000;
 }
 
-header {
-    background-image: url('assets/bannerbackground.jpg');  /* Replace with your image path */
-    background-size: cover;  /* Ensures the image covers the header without stretching */
-    background-position: center;  /* Centers the image */
-    height: 300px;  /* Set a fixed height for the banner */
-    width: 100%;  /* Make the banner full-width */
-    color: white;  /* Set text color for visibility */
+.main-header {
     display: flex;
-    align-items: center;  /* Centers the text vertically */
-    justify-content: center;  /* Centers the text horizontally */
-    text-align: center;  /* Optional: Ensures the text is centered */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    border-bottom: 2px solid #ddd;
 }
 
-/* Optional: Style for the title */
-header h1 {
-    font-size: 2rem;
-    margin: 0;
+.left-section,
+.middle-section,
+.right-section {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: #ffffff;
 }
 
+.left-section div {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.subtitle {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 2px; /* Small spacing between name and subtitle */
+    line-height: 1.2;
+}
+
+.middle-section {
+    justify-content: center;
+}
+
+.toggleContainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+    border: 3px solid #343434;
+    border-radius: 20px;
+    background: #343434;
+    font-weight: bold;
+    color: #343434;
+    cursor: pointer;
+  }
+  .toggleContainer::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0%;
+    border-radius:20px;
+    background: white;
+    transition: all 0.3s;
+  }
+  .toggleCheckbox:checked + .toggleContainer::before {
+     left: 50%;
+  }
+  .toggleContainer div {
+    padding: 6px;
+    text-align: center;
+    z-index: 1;
+  }
+  .toggleCheckbox {
+    display: none;
+  }
+  .toggleCheckbox:checked + .toggleContainer div:first-child{
+    color: white;
+    transition: color 0.3s;
+  }
+  .toggleCheckbox:checked + .toggleContainer div:last-child{
+    color: #343434;
+    transition: color 0.3s;
+  }
+  .toggleCheckbox + .toggleContainer div:first-child{
+    color: #343434;
+    transition: color 0.3s;
+  }
+  .toggleCheckbox + .toggleContainer div:last-child{
+    color: white;
+    transition: color 0.3s;
+  }
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-link img {
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.icon-link img:hover {
+    transform: scale(1.2);
+}
+
+/* Optional dark theme styles */
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-theme .main-header {
+    background-color: #444;
+    border-bottom-color: #555;
+}
+
+body.dark-theme .name {
+    color: #fff;
+}
+
+body.dark-theme .subtitle {
+    color: #aaa;
+}
+
+body.dark-theme .slider {
+    background-color: #555;
+}
 .nav-links {
     display: flex;
     align-items: center;
