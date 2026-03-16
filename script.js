@@ -113,12 +113,17 @@ sections.forEach(s => navObserver.observe(s));
 
   function spawnTarget() {
     if (paused) return;
-    const rect = field.getBoundingClientRect();
-    if (rect.width < 100) return; // field not visible
+    const fieldRect = field.getBoundingClientRect();
+    if (fieldRect.width < 100) return; // field not visible
+
+    // Clamp spawn area above the hero-stats bar
+    const stats = document.querySelector('.hero-stats');
+    const statsTop = stats ? stats.getBoundingClientRect().top : fieldRect.bottom;
+    const usableHeight = Math.max(100, statsTop - fieldRect.top);
 
     const padding = 12;
     const maxX = field.clientWidth - TARGET_SIZE - padding;
-    const maxY = field.clientHeight - TARGET_SIZE - padding;
+    const maxY = usableHeight - TARGET_SIZE - padding;
     const x = rand(padding, Math.max(padding + 1, maxX));
     const y = rand(padding, Math.max(padding + 1, maxY));
 
@@ -178,6 +183,27 @@ sections.forEach(s => navObserver.observe(s));
 
   // Initial spawn after page load animation settles
   setTimeout(spawnTarget, 1500);
+})();
+
+// ── Hero background text cycle ────────────────
+(function heroBgCycle() {
+  const el = document.getElementById('heroBgPrefix');
+  if (!el) return;
+
+  const words = ['VR', 'XR', 'AR', 'GAME'];
+  let index = 0;
+
+  setInterval(() => {
+    el.classList.add('out');
+    el.classList.remove('in');
+
+    setTimeout(() => {
+      index = (index + 1) % words.length;
+      el.textContent = words[index];
+      el.classList.remove('out');
+      el.classList.add('in');
+    }, 400);
+  }, 3000);
 })();
 
 // ── Nav scroll opacity ────────────────────────
