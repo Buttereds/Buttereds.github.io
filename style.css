@@ -141,9 +141,6 @@ body::before {
   pointer-events: none;
   user-select: none;
   letter-spacing: -0.02em;
-}
-
-.hero-bg-text {
   display: flex;
   flex-direction: column;
   align-items: flex-end;

@@ -75,7 +75,7 @@ sections.forEach(s => navObserver.observe(s));
 
   function updateAvg() {
     if (times.length === 0) {
-      avgEl.textContent = 'AVG \u2014ms';
+      avgEl.textContent = 'AVG --ms';
       return;
     }
     const last10 = times.slice(-10);
