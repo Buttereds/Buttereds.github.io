@@ -152,9 +152,10 @@ a { color: inherit; text-decoration: none; }
 }
 
 .main-video {
-  object-fit: contain;  /* contain keeps controls visible */
+  object-fit: contain;
   display: none;
   background: #000;
+  border: none;
 }
 
 .screenshot-grid {

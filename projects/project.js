@@ -12,14 +12,15 @@ thumbs.forEach(thumb => {
     if (thumb.dataset.type === 'video' && mainVideo) {
       if (mainImg) mainImg.style.display = 'none';
       mainVideo.style.display = 'block';
-      mainVideo.load();
-      mainVideo.play().catch(() => {
-        // Autoplay blocked — controls are visible, user can press play manually
-      });
+      // Load YouTube embed from data-yt attribute with autoplay
+      const ytUrl = mainVideo.dataset.yt;
+      if (ytUrl) {
+        mainVideo.src = ytUrl + '?autoplay=1';
+      }
     } else {
-      // Show image
+      // Show image, hide video
       if (mainVideo) {
-        mainVideo.pause();
+        mainVideo.src = '';
         mainVideo.style.display = 'none';
       }
       if (mainImg) {
