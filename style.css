@@ -137,7 +137,7 @@ body::before {
   font-size: clamp(10rem, 22vw, 22rem);
   line-height: 0.85;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(255,255,255,0.03);
+  -webkit-text-stroke: 1px rgba(255,255,255,0.16);
   pointer-events: none;
   user-select: none;
   letter-spacing: -0.02em;
