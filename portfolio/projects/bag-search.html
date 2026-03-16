@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BAG SEARCH & WANDING — Alex Carter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a href="../index.html" class="back-link"><span class="accent">←</span> BACK</a>
+    <span class="nav-logo">DEV<span class="accent">_</span></span>
+  </nav>
+
+  <header class="proj-hero">
+    <div class="proj-hero-meta">
+      <span class="proj-num accent">04</span>
+      <span class="proj-platform">VR SIMULATION — SECURITY TRAINING</span>
+    </div>
+    <h1 class="proj-title">BAG SEARCH<br>&amp; <span class="accent">WANDING</span></h1>
+    <p class="proj-subtitle">Hands-on VR security training simulation for venue and transport staff — correct procedure, every time.</p>
+  </header>
+
+  <div class="proj-body">
+    <div class="proj-screenshots">
+      <div class="screenshot-main">
+        <img class="main-img" src="../../assets/BagSearchAndWanding/BSNW1.png" alt="Venue entry point" />
+      </div>
+      <div class="screenshot-grid">
+        <img class="thumb thumb-active" data-type="image" data-src="../../assets/BagSearchAndWanding/BSNW1.png" src="../../assets/BagSearchAndWanding/BSNW1.png" alt="Venue entry point" tabindex="0" />
+        <img class="thumb" data-type="image" data-src="../../assets/BagSearchAndWanding/BSNW2.png" src="../../assets/BagSearchAndWanding/BSNW2.png" alt="Wanding procedure" tabindex="0" />
+      </div>
+    </div>
+
+    <div class="proj-content">
+      <section class="proj-section">
+        <h2 class="proj-section-title">OVERVIEW</h2>
+        <p>Bag Search & Wanding is a procedural VR training simulation for security staff at venues, transport hubs, and public events. Rather than watching a demonstration video, trainees physically perform the correct bag search and handheld wand procedures in a fully interactive 3D environment.</p>
+        <p>The simulation tracks procedural accuracy in real time, flags incorrect technique, and logs completion data for compliance reporting — reducing both training cost and on-the-job errors.</p>
+      </section>
+      <section class="proj-section">
+        <h2 class="proj-section-title">MY ROLE</h2>
+        <p>Lead developer. I designed and built the procedural step-tracking system, all hand interaction mechanics, the NPC queue simulation, and the pass/fail assessment logic with detailed feedback reporting.</p>
+      </section>
+      <section class="proj-section">
+        <h2 class="proj-section-title">TECHNICAL HIGHLIGHTS</h2>
+        <ul class="proj-list">
+          <li>Procedural step-tracker — validates correct sequence of search actions against a configurable procedure definition</li>
+          <li>Physics-based hand interactions: wand grip, bag handling, item inspection using XR Interaction Toolkit</li>
+          <li>NPC queue simulation — procedurally generated visitor characters with varied bag contents and behaviour</li>
+          <li>Real-time technique feedback: wand angle, speed, and coverage area assessed against compliance thresholds</li>
+          <li>LMS integration via xAPI (Tin Can) — session results sent directly to client learning management systems</li>
+        </ul>
+      </section>
+      <div class="proj-details-grid">
+        <div class="proj-detail"><span class="detail-label">ENGINE</span><span class="detail-value">Unity (XR Toolkit)</span></div>
+        <div class="proj-detail"><span class="detail-label">LANGUAGE</span><span class="detail-value">C#</span></div>
+        <div class="proj-detail"><span class="detail-label">PLATFORM</span><span class="detail-value">Meta Quest 2/3</span></div>
+        <div class="proj-detail"><span class="detail-label">STATUS</span><span class="detail-value accent">SHIPPED</span></div>
+        <div class="proj-detail"><span class="detail-label">REPORTING</span><span class="detail-value">xAPI / LMS</span></div>
+        <div class="proj-detail"><span class="detail-label">TYPE</span><span class="detail-value">Procedural Simulation</span></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <a href="cck.html" class="footer-next">NEXT: CONTENT CREATION KIT <span class="accent">→</span></a>
+  </footer>
+  <script src="project.js"></script>
+</body>
+</html>

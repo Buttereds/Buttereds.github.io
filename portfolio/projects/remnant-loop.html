@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REMNANT LOOP — Alex Carter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="../index.html" class="back-link"><span class="accent">←</span> BACK</a>
+    <span class="nav-logo">DEV<span class="accent">_</span></span>
+  </nav>
+
+  <header class="proj-hero">
+    <div class="proj-hero-meta">
+      <span class="proj-num accent">03</span>
+      <span class="proj-platform">PC / ITCH.IO — 48HR GAME JAM</span>
+    </div>
+    <h1 class="proj-title">REMNANT<br><span class="accent">LOOP</span></h1>
+    <p class="proj-subtitle">Jam #1 in Innovation. A time-loop roguelike where every death teaches the world.</p>
+  </header>
+
+  <div class="proj-body">
+
+    <div class="proj-screenshot">
+      <div class="screenshot-placeholder">
+        <span class="placeholder-label">SCREENSHOT / TRAILER</span>
+        <div class="placeholder-grid"></div>
+      </div>
+    </div>
+
+    <div class="proj-content">
+
+      <section class="proj-section">
+        <h2 class="proj-section-title">OVERVIEW</h2>
+        <p>Remnant Loop was built solo in 48 hours for a themed game jam. The central mechanic: when you die, the world remembers. Enemies adapt to how you fought them. Environmental traps reset but retain memory of which ones you triggered. The dungeon layout subtly shifts.</p>
+        <p>The result is a roguelike that gets harder in a deeply personal way — it learns you specifically.</p>
+      </section>
+
+      <section class="proj-section">
+        <h2 class="proj-section-title">MY ROLE</h2>
+        <p>Everything — design, code, pixel art, sound effects. Built solo under a 48-hour time constraint. The adaptive AI and persistence system were the core technical bets I made, and both paid off.</p>
+      </section>
+
+      <section class="proj-section">
+        <h2 class="proj-section-title">TECHNICAL HIGHLIGHTS</h2>
+        <ul class="proj-list">
+          <li>Lightweight behaviour tree AI with per-run memory serialisation</li>
+          <li>Enemy adaptation system — tracks player movement patterns, weapon usage frequency, and route preferences across deaths</li>
+          <li>Procedural dungeon generation with biased weighting based on past player paths</li>
+          <li>Entire project built in Godot 4 — first time using the engine seriously</li>
+        </ul>
+      </section>
+
+      <div class="proj-details-grid">
+        <div class="proj-detail">
+          <span class="detail-label">ENGINE</span>
+          <span class="detail-value">Godot 4</span>
+        </div>
+        <div class="proj-detail">
+          <span class="detail-label">LANGUAGE</span>
+          <span class="detail-value">GDScript</span>
+        </div>
+        <div class="proj-detail">
+          <span class="detail-label">PLATFORM</span>
+          <span class="detail-value">PC (itch.io)</span>
+        </div>
+        <div class="proj-detail">
+          <span class="detail-label">JAM RESULT</span>
+          <span class="detail-value accent">#1 INNOVATION</span>
+        </div>
+        <div class="proj-detail">
+          <span class="detail-label">TEAM SIZE</span>
+          <span class="detail-value">Solo</span>
+        </div>
+        <div class="proj-detail">
+          <span class="detail-label">BUILD TIME</span>
+          <span class="detail-value">48 hours</span>
+        </div>
+      </div>
+
+      <div class="proj-links">
+        <a href="#" class="btn-primary">PLAY ON ITCH.IO <span class="accent">↗</span></a>
+        <a href="#" class="btn-ghost">SOURCE CODE</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <a href="deep-static.html" class="footer-next">NEXT PROJECT: DEEP STATIC <span class="accent">→</span></a>
+  </footer>
+
+  <script src="project.js"></script>
+</body>
+</html>

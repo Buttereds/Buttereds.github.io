@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DIVERSITY, INCLUSION & BELONGING — Alex Carter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a href="../index.html" class="back-link"><span class="accent">←</span> BACK</a>
+    <span class="nav-logo">DEV<span class="accent">_</span></span>
+  </nav>
+
+  <header class="proj-hero">
+    <div class="proj-hero-meta">
+      <span class="proj-num accent">02</span>
+      <span class="proj-platform">VR SIMULATION — ENTERPRISE TRAINING</span>
+    </div>
+    <h1 class="proj-title">DIVERSITY,<br>INCLUSION &amp;<br><span class="accent">BELONGING</span></h1>
+    <p class="proj-subtitle">High-fidelity VR workplace simulation — experience unconscious bias, allyship, and inclusion from multiple perspectives.</p>
+  </header>
+
+  <div class="proj-body">
+    <div class="proj-screenshots">
+      <div class="screenshot-main">
+        <img class="main-img" src="../../assets/DIB/DIB1.png" alt="DIB — subway commute scenario" />
+        <video class="main-video" controls preload="none">
+          <source src="../../assets/DIB/DIB_Video.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="screenshot-grid">
+        <img class="thumb thumb-active" data-type="image" data-src="../../assets/DIB/DIB1.png" src="../../assets/DIB/DIB1.png" alt="Subway scenario" tabindex="0" />
+        <img class="thumb" data-type="image" data-src="../../assets/DIB/DIB2.jpg" src="../../assets/DIB/DIB2.jpg" alt="Scene 2" tabindex="0" />
+        <img class="thumb" data-type="image" data-src="../../assets/DIB/DIB3.jpg" src="../../assets/DIB/DIB3.jpg" alt="Scene 3" tabindex="0" />
+        <img class="thumb" data-type="image" data-src="../../assets/DIB/DIB4.jpg" src="../../assets/DIB/DIB4.jpg" alt="Office scenario" tabindex="0" />
+        <div class="thumb thumb--video" data-type="video" tabindex="0" role="button" aria-label="Play video">
+          <span class="play-btn">▶</span>
+          <span class="play-label">PLAY VIDEO</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-content">
+      <section class="proj-section">
+        <h2 class="proj-section-title">OVERVIEW</h2>
+        <p>DIB is an enterprise VR training simulation designed to build empathy and awareness around diversity, inclusion, and belonging in the workplace. Learners are placed inside real social scenarios — a subway commute, office interactions, team meetings — and experience situations that reveal unconscious bias in action.</p>
+        <p>The simulation uses perspective-shifting mechanics: you can experience the same event as different characters, making the abstract tangible in a way classroom or video-based training cannot replicate.</p>
+      </section>
+      <section class="proj-section">
+        <h2 class="proj-section-title">MY ROLE</h2>
+        <p>Lead programmer on a team of four. I built the character interaction systems, the perspective-switch mechanic, and the scenario state machine that drives each training module. I also handled all performance optimisation for standalone hardware.</p>
+      </section>
+      <section class="proj-section">
+        <h2 class="proj-section-title">TECHNICAL HIGHLIGHTS</h2>
+        <ul class="proj-list">
+          <li>Perspective-switch system — seamlessly transplants the player into a different character's spatial position and POV mid-scene</li>
+          <li>High-fidelity NPC characters with blend-shape driven facial animation and lip sync</li>
+          <li>Modular scenario state machine — each training module is authored as a data-driven scene graph</li>
+          <li>Photorealistic environments optimised for standalone Quest via baked lighting and mesh LOD</li>
+          <li>Post-experience debrief scoring system tracking learner choices and responses</li>
+        </ul>
+      </section>
+      <div class="proj-details-grid">
+        <div class="proj-detail"><span class="detail-label">ENGINE</span><span class="detail-value">Unity (XR Toolkit)</span></div>
+        <div class="proj-detail"><span class="detail-label">LANGUAGE</span><span class="detail-value">C#</span></div>
+        <div class="proj-detail"><span class="detail-label">PLATFORM</span><span class="detail-value">Meta Quest / SteamVR</span></div>
+        <div class="proj-detail"><span class="detail-label">STATUS</span><span class="detail-value accent">SHIPPED</span></div>
+        <div class="proj-detail"><span class="detail-label">TEAM SIZE</span><span class="detail-value">4 people</span></div>
+        <div class="proj-detail"><span class="detail-label">TYPE</span><span class="detail-value">VR Simulation</span></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <a href="coaching-conversations.html" class="footer-next">NEXT: COACHING CONVERSATIONS <span class="accent">→</span></a>
+  </footer>
+  <script src="project.js"></script>
+</body>
+</html>

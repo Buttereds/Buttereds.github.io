@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(start \"\" \"c:\\\\Users\\\\alexb\\\\OneDrive\\\\Desktop\\\\ClaudeProjects\\\\ClaudeTest\\\\portfolio\\\\index.html\")",
+      "Bash(start \"\" \"http://localhost:8080\")",
+      "Bash(cmd.exe /c \"cd /d C:\\\\Users\\\\alexb\\\\OneDrive\\\\Desktop\\\\ClaudeProjects\\\\ClaudeTest && start cmd /k \"\"npx http-server portfolio -p 8080\"\"\")",
+      "Bash(cmd.exe /c \"start cmd /k npx http-server C:\\\\Users\\\\alexb\\\\OneDrive\\\\Desktop\\\\ClaudeProjects\\\\ClaudeTest\\\\portfolio -p 8080\")",
+      "Bash(cmd.exe /c \"where npm\")",
+      "Bash(cmd.exe /c \"where node\")",
+      "Bash(cmd.exe /c \"where npx\")",
+      "Bash(cmd.exe /c \"start C:\\\\Users\\\\alexb\\\\OneDrive\\\\Desktop\\\\ClaudeProjects\\\\ClaudeTest\\\\portfolio\\\\index.html\")",
+      "Bash(export PATH=\"/c/Program Files/nodejs:$PATH\")",
+      "Bash(mkdir -p \"C:/Users/alexb/AppData/Local/Temp/puppeteer-test\")",
+      "Read(//c/Users/alexb/AppData/Local/Temp/**)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(rm -f package.json package-lock.json)",
+      "Bash(cmd.exe /c \"dir /s /b C:\\\\Users\\\\alexb\\\\OneDrive\\\\Desktop\\\\ClaudeProjects\\\\ClaudeTest\\\\assets\")",
+      "Bash(cmd.exe /c \"dir C:\\\\Users\\\\alexb\\\\OneDrive\\\\Desktop\\\\ClaudeProjects\\\\ClaudeTest\\\\brand_assets 2>&1\")",
+      "Bash(cmd.exe /c \"dir C:\\\\Users\\\\alexb\\\\OneDrive\\\\Desktop\\\\ClaudeProjects\\\\ClaudeTest\\\\serve.mjs C:\\\\Users\\\\alexb\\\\OneDrive\\\\Desktop\\\\ClaudeProjects\\\\ClaudeTest\\\\screenshot.mjs 2>&1\")",
+      "Bash(node screenshot.mjs http://localhost:3000 homepage)",
+      "Bash(cmd.exe /c \"dir /s /b C:\\\\Users\\\\alexb\\\\OneDrive\\\\Desktop\\\\ClaudeProjects\\\\ClaudeTest\\\\assets\\\\*.*\")",
+      "Bash(cmd.exe /c \"start C:\\\\Users\\\\alexb\\\\OneDrive\\\\Desktop\\\\ClaudeProjects\\\\ClaudeTest\\\\portfolio\\\\projects\\\\empowered-reality.html\")"
+    ]
+  }
+}

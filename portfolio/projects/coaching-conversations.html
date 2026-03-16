@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COACHING CONVERSATIONS — Alex Carter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a href="../index.html" class="back-link"><span class="accent">←</span> BACK</a>
+    <span class="nav-logo">DEV<span class="accent">_</span></span>
+  </nav>
+
+  <header class="proj-hero">
+    <div class="proj-hero-meta">
+      <span class="proj-num accent">03</span>
+      <span class="proj-platform">VR SIMULATION — PROFESSIONAL DEVELOPMENT</span>
+    </div>
+    <h1 class="proj-title">COACHING<br><span class="accent">CONVERSATIONS</span></h1>
+    <p class="proj-subtitle">AI-driven VR coaching simulator — practise difficult workplace conversations with a character that responds to what you actually say.</p>
+  </header>
+
+  <div class="proj-body">
+    <div class="proj-screenshots">
+      <div class="screenshot-main">
+        <img class="main-img" src="../../assets/CoachingConversations/CC2.png" alt="AI character Eric" />
+      </div>
+      <div class="screenshot-grid">
+        <img class="thumb thumb-active" data-type="image" data-src="../../assets/CoachingConversations/CC2.png" src="../../assets/CoachingConversations/CC2.png" alt="AI character Eric" tabindex="0" />
+        <img class="thumb" data-type="image" data-src="../../assets/CoachingConversations/CC1.png" src="../../assets/CoachingConversations/CC1.png" alt="Scene overview" tabindex="0" />
+        <img class="thumb" data-type="image" data-src="../../assets/CoachingConversations/CC3.jpeg" src="../../assets/CoachingConversations/CC3.jpeg" alt="Conversation moment" tabindex="0" />
+        <img class="thumb" data-type="image" data-src="../../assets/CoachingConversations/CC4.png" src="../../assets/CoachingConversations/CC4.png" alt="Debrief" tabindex="0" />
+      </div>
+    </div>
+
+    <div class="proj-content">
+      <section class="proj-section">
+        <h2 class="proj-section-title">OVERVIEW</h2>
+        <p>Coaching Conversations puts learners face-to-face with a photorealistic AI character in a sleek, purpose-built VR environment. The simulation is designed for managers and team leads who need to practise high-stakes conversations — delivering critical feedback, handling conflict, navigating performance reviews — in a safe, repeatable space.</p>
+        <p>Unlike scripted training videos, the AI character responds dynamically to what the learner says and how they say it.</p>
+      </section>
+      <section class="proj-section">
+        <h2 class="proj-section-title">MY ROLE</h2>
+        <p>Lead programmer. I built the full dialogue engine, NPC animation state machine, speech recognition integration, and the post-session analytics and scoring system including real-time lip sync driven by live audio.</p>
+      </section>
+      <section class="proj-section">
+        <h2 class="proj-section-title">TECHNICAL HIGHLIGHTS</h2>
+        <ul class="proj-list">
+          <li>Real-time lip sync via audio phoneme analysis driving blend-shape facial animation</li>
+          <li>Speech recognition integration (Azure Cognitive Services) for live voice input</li>
+          <li>Branching dialogue engine with sentiment weighting — character "mood" shifts based on conversation quality</li>
+          <li>Session analytics: tracks response quality, pacing, keyword usage, and sentiment over time</li>
+          <li>Custom VR environment with dynamic lighting to shift emotional tone across conversation stages</li>
+        </ul>
+      </section>
+      <div class="proj-details-grid">
+        <div class="proj-detail"><span class="detail-label">ENGINE</span><span class="detail-value">Unity (XR Toolkit)</span></div>
+        <div class="proj-detail"><span class="detail-label">LANGUAGE</span><span class="detail-value">C#</span></div>
+        <div class="proj-detail"><span class="detail-label">PLATFORM</span><span class="detail-value">Meta Quest / PC VR</span></div>
+        <div class="proj-detail"><span class="detail-label">STATUS</span><span class="detail-value accent">SHIPPED</span></div>
+        <div class="proj-detail"><span class="detail-label">AI TECH</span><span class="detail-value">Azure Speech SDK</span></div>
+        <div class="proj-detail"><span class="detail-label">TYPE</span><span class="detail-value">VR Simulation</span></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <a href="bag-search.html" class="footer-next">NEXT: BAG SEARCH &amp; WANDING <span class="accent">→</span></a>
+  </footer>
+  <script src="project.js"></script>
+</body>
+</html>

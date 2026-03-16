@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FOCUS — Alex Carter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a href="../index.html" class="back-link"><span class="accent">←</span> BACK</a>
+    <span class="nav-logo">DEV<span class="accent">_</span></span>
+  </nav>
+
+  <header class="proj-hero">
+    <div class="proj-hero-meta">
+      <span class="proj-num accent">09</span>
+      <span class="proj-platform">2D SERIOUS GAME — FOCUS &amp; ATTENTION</span>
+    </div>
+    <h1 class="proj-title">F<span class="accent">★</span>CUS</h1>
+    <p class="proj-subtitle">A pixel-art 2D game blending knowledge quiz questions with distraction management — simulating real cognitive load through play.</p>
+  </header>
+
+  <div class="proj-body">
+    <div class="proj-screenshots">
+      <div class="screenshot-main">
+        <img class="main-img" src="../../assets/Focus/F 1.png" alt="Focus — title screen" />
+      </div>
+      <div class="screenshot-grid">
+        <img class="thumb thumb-active" data-type="image" data-src="../../assets/Focus/F 1.png" src="../../assets/Focus/F 1.png" alt="Title screen" tabindex="0" />
+        <img class="thumb" data-type="image" data-src="../../assets/Focus/F 2.png" src="../../assets/Focus/F 2.png" alt="Distraction gameplay" tabindex="0" />
+        <img class="thumb" data-type="image" data-src="../../assets/Focus/F 3.png" src="../../assets/Focus/F 3.png" alt="Desert level" tabindex="0" />
+        <img class="thumb" data-type="image" data-src="../../assets/Focus/F 4.png" src="../../assets/Focus/F 4.png" alt="Quiz question overlay" tabindex="0" />
+      </div>
+    </div>
+
+    <div class="proj-content">
+      <section class="proj-section">
+        <h2 class="proj-section-title">OVERVIEW</h2>
+        <p>Focus is a pixel-art 2D serious game that teaches attention and concentration through a dual-challenge mechanic — players must answer knowledge quiz questions correctly while simultaneously managing on-screen distractions in a dynamic game environment.</p>
+        <p>As levels progress, environments become noisier and more visually complex, deliberately simulating the conditions under which real cognitive performance degrades. Succeeding requires players to develop genuine attentional control, not just memorise answers.</p>
+      </section>
+      <section class="proj-section">
+        <h2 class="proj-section-title">MY ROLE</h2>
+        <p>Lead developer. I built the distraction detection and scoring system, the progressive difficulty scaling, all level logic, and the in-game tutorial system delivered via the guide character.</p>
+      </section>
+      <section class="proj-section">
+        <h2 class="proj-section-title">TECHNICAL HIGHLIGHTS</h2>
+        <ul class="proj-list">
+          <li>Dual-challenge engine — quiz question timing and distraction spawning run on independent but coordinated systems</li>
+          <li>Distraction classification system — different types require different interaction patterns to resolve</li>
+          <li>Performance score model measuring accuracy, response time, and missed distractions</li>
+          <li>Progressive difficulty engine — increases distraction frequency, variety, and time pressure across levels</li>
+          <li>Post-game debrief linking player performance to real-world attention management strategies</li>
+        </ul>
+      </section>
+      <div class="proj-details-grid">
+        <div class="proj-detail"><span class="detail-label">ENGINE</span><span class="detail-value">Unity</span></div>
+        <div class="proj-detail"><span class="detail-label">LANGUAGE</span><span class="detail-value">C#</span></div>
+        <div class="proj-detail"><span class="detail-label">PLATFORM</span><span class="detail-value">PC / Browser</span></div>
+        <div class="proj-detail"><span class="detail-label">STATUS</span><span class="detail-value accent">SHIPPED</span></div>
+        <div class="proj-detail"><span class="detail-label">TEAM SIZE</span><span class="detail-value">Solo</span></div>
+        <div class="proj-detail"><span class="detail-label">TYPE</span><span class="detail-value">2D Serious Game</span></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <a href="../index.html" class="footer-next"><span class="accent">←</span> BACK TO PORTFOLIO</a>
+  </footer>
+  <script src="project.js"></script>
+</body>
+</html>
