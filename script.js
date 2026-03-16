@@ -53,6 +53,133 @@ const navObserver = new IntersectionObserver((entries) => {
 
 sections.forEach(s => navObserver.observe(s));
 
+// ── Reaction test ────────────────────────────
+(function reactionTest() {
+  const field = document.getElementById('reactionField');
+  const avgEl = document.getElementById('reactionAvg');
+  if (!field) return;
+
+  const TARGET_SIZE = 48;
+  const LIFETIME = 2500;           // ms before target expires
+  const SPAWN_DELAY_MIN = 800;     // min pause between targets
+  const SPAWN_DELAY_MAX = 2000;    // max pause between targets
+  const times = [];
+  let currentTarget = null;
+  let spawnTime = 0;
+  let expireTimer = null;
+  let paused = false;
+
+  function rand(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
+
+  function updateAvg() {
+    if (times.length === 0) {
+      avgEl.textContent = 'AVG \u2014ms';
+      return;
+    }
+    const last10 = times.slice(-10);
+    const avg = Math.round(last10.reduce((a, b) => a + b, 0) / last10.length);
+    avgEl.textContent = 'AVG ' + avg + 'ms';
+  }
+
+  const resetBtn = document.getElementById('reactionReset');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      times.length = 0;
+      updateAvg();
+    });
+  }
+
+  function showMs(x, y, ms) {
+    const el = document.createElement('span');
+    el.className = 'reaction-ms' + (ms > 600 ? ' slow' : '');
+    el.textContent = ms + 'ms';
+    el.style.left = x + 'px';
+    el.style.top = (y - 10) + 'px';
+    field.appendChild(el);
+    setTimeout(() => el.remove(), 800);
+  }
+
+  function removeTarget(anim) {
+    if (!currentTarget) return;
+    clearTimeout(expireTimer);
+    currentTarget.classList.remove('spawn');
+    currentTarget.classList.add(anim);
+    const t = currentTarget;
+    setTimeout(() => t.remove(), 300);
+    currentTarget = null;
+  }
+
+  function spawnTarget() {
+    if (paused) return;
+    const rect = field.getBoundingClientRect();
+    if (rect.width < 100) return; // field not visible
+
+    const padding = 12;
+    const maxX = field.clientWidth - TARGET_SIZE - padding;
+    const maxY = field.clientHeight - TARGET_SIZE - padding;
+    const x = rand(padding, Math.max(padding + 1, maxX));
+    const y = rand(padding, Math.max(padding + 1, maxY));
+
+    const target = document.createElement('div');
+    target.className = 'reaction-target spawn';
+    target.style.left = x + 'px';
+    target.style.top = y + 'px';
+    field.appendChild(target);
+
+    currentTarget = target;
+    spawnTime = performance.now();
+
+    target.addEventListener('click', () => {
+      if (target !== currentTarget) return;
+      const ms = Math.round(performance.now() - spawnTime);
+      times.push(ms);
+      showMs(x + TARGET_SIZE / 2 - 12, y, ms);
+      removeTarget('hit');
+      updateAvg();
+      scheduleNext();
+    });
+
+    expireTimer = setTimeout(() => {
+      if (target === currentTarget) {
+        removeTarget('expire');
+        scheduleNext();
+      }
+    }, LIFETIME);
+  }
+
+  function scheduleNext() {
+    setTimeout(spawnTarget, rand(SPAWN_DELAY_MIN, SPAWN_DELAY_MAX));
+  }
+
+  // Only run when field is in viewport and screen is wide enough
+  function checkVisibility() {
+    const wide = window.innerWidth >= 1100;
+    if (!wide) {
+      paused = true;
+      return;
+    }
+    paused = false;
+  }
+
+  // Pause when hero is out of view
+  const heroObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      paused = !entry.isIntersecting || window.innerWidth < 1100;
+    });
+  }, { threshold: 0.2 });
+
+  const hero = document.getElementById('home');
+  if (hero) heroObserver.observe(hero);
+
+  window.addEventListener('resize', checkVisibility);
+  checkVisibility();
+
+  // Initial spawn after page load animation settles
+  setTimeout(spawnTarget, 1500);
+})();
+
 // ── Nav scroll opacity ────────────────────────
 const nav = document.querySelector('.nav');
 window.addEventListener('scroll', () => {
