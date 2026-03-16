@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEAMWORK — Alex Carter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a href="../index.html" class="back-link"><span class="accent">←</span> BACK</a>
+    <span class="nav-logo">DEV<span class="accent">_</span></span>
+  </nav>
+
+  <header class="proj-hero">
+    <div class="proj-hero-meta">
+      <span class="proj-num accent">06</span>
+      <span class="proj-platform">2D SERIOUS GAME — TEAMWORK SKILLS</span>
+    </div>
+    <h1 class="proj-title">TEAM<br><span class="accent">WORK</span></h1>
+    <p class="proj-subtitle">A stylised 2D platformer where switching between three characters with unique abilities is the only way to progress — the mechanic is the lesson.</p>
+  </header>
+
+  <div class="proj-body">
+    <div class="proj-screenshots">
+      <div class="screenshot-main">
+        <img class="main-img" src="../assets/Teamwork/TW 1.png" alt="Teamwork — title screen" />
+        <video class="main-video" controls preload="none">
+          <source src="../assets/Teamwork/TWRecording 1.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="screenshot-grid">
+        <img class="thumb thumb-active" data-type="image" data-src="../assets/Teamwork/TW 1.png" src="../assets/Teamwork/TW 1.png" alt="Title screen" tabindex="0" />
+        <img class="thumb" data-type="image" data-src="../assets/Teamwork/TW 2.png" src="../assets/Teamwork/TW 2.png" alt="Three characters gameplay" tabindex="0" />
+        <img class="thumb" data-type="image" data-src="../assets/Teamwork/TW 3.png" src="../assets/Teamwork/TW 3.png" alt="Platformer level" tabindex="0" />
+        <img class="thumb" data-type="image" data-src="../assets/Teamwork/TW 4.png" src="../assets/Teamwork/TW 4.png" alt="Dungeon level" tabindex="0" />
+        <div class="thumb thumb--video" data-type="video" tabindex="0" role="button" aria-label="Play video">
+          <span class="play-btn">▶</span>
+          <span class="play-label">PLAY VIDEO</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-content">
+      <section class="proj-section">
+        <h2 class="proj-section-title">OVERVIEW</h2>
+        <p>Teamwork is a 2D side-scrolling platformer built as a serious game for teamwork skills training. Players control a team of three characters — each with a distinct ability — and must switch between them to overcome obstacles that no single character can solve alone.</p>
+        <p>The core design principle: the mechanic is the message. Players naturally internalise that different strengths are complementary — not through instruction, but through the experience of failing without collaboration and succeeding with it.</p>
+      </section>
+      <section class="proj-section">
+        <h2 class="proj-section-title">MY ROLE</h2>
+        <p>Lead developer. I built the character switching system, all platformer physics, the level scripting pipeline, and the scoring and debrief system.</p>
+      </section>
+      <section class="proj-section">
+        <h2 class="proj-section-title">TECHNICAL HIGHLIGHTS</h2>
+        <ul class="proj-list">
+          <li>Three-character switching system with per-character ability states and seamless control handoff</li>
+          <li>Custom 2D platformer physics — fully kinematic for precise, predictable feel</li>
+          <li>Level scripting system allowing non-developers to author challenge sequences via data assets</li>
+          <li>Adaptive difficulty — tracks player performance and adjusts obstacle density accordingly</li>
+          <li>Debrief screen with per-decision analysis mapped to teamwork learning outcomes</li>
+        </ul>
+      </section>
+      <div class="proj-details-grid">
+        <div class="proj-detail"><span class="detail-label">ENGINE</span><span class="detail-value">Unity</span></div>
+        <div class="proj-detail"><span class="detail-label">LANGUAGE</span><span class="detail-value">C#</span></div>
+        <div class="proj-detail"><span class="detail-label">PLATFORM</span><span class="detail-value">PC / Browser</span></div>
+        <div class="proj-detail"><span class="detail-label">STATUS</span><span class="detail-value accent">SHIPPED</span></div>
+        <div class="proj-detail"><span class="detail-label">TEAM SIZE</span><span class="detail-value">Solo</span></div>
+        <div class="proj-detail"><span class="detail-label">TYPE</span><span class="detail-value">2D Platformer</span></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <a href="time-management.html" class="footer-next">NEXT: TIME MANAGEMENT <span class="accent">→</span></a>
+  </footer>
+  <script src="project.js"></script>
+</body>
+</html>

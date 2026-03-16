@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMPOWERED REALITY — Alex Carter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a href="../index.html" class="back-link"><span class="accent">←</span> BACK</a>
+    <span class="nav-logo">DEV<span class="accent">_</span></span>
+  </nav>
+
+  <header class="proj-hero">
+    <div class="proj-hero-meta">
+      <span class="proj-num accent">01</span>
+      <span class="proj-platform">VR EXPERIENCE — SKILLSVR</span>
+    </div>
+    <h1 class="proj-title">EMPOWERED<br><span class="accent">REALITY</span></h1>
+    <p class="proj-subtitle">A branded VR onboarding experience that establishes presence and spatial confidence inside the SkillsVR platform.</p>
+  </header>
+
+  <div class="proj-body">
+    <div class="proj-screenshots">
+      <div class="screenshot-main">
+        <img class="main-img" src="../assets/EmpoweredReality/ER1.png" alt="Empowered Reality — SkillsVR lobby" />
+        <video class="main-video" controls preload="none">
+          <source src="../assets/EmpoweredReality/ER_Recording1.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="screenshot-grid">
+        <img class="thumb thumb-active" data-type="image" data-src="../assets/EmpoweredReality/ER1.png" src="../assets/EmpoweredReality/ER1.png" alt="SkillsVR lobby" tabindex="0" />
+        <img class="thumb" data-type="image" data-src="../assets/EmpoweredReality/ER2.png" src="../assets/EmpoweredReality/ER2.png" alt="Scene 2" tabindex="0" />
+        <img class="thumb" data-type="image" data-src="../assets/EmpoweredReality/ER3.png" src="../assets/EmpoweredReality/ER3.png" alt="Scene 3" tabindex="0" />
+        <img class="thumb" data-type="image" data-src="../assets/EmpoweredReality/ER4.png" src="../assets/EmpoweredReality/ER4.png" alt="Scene 4" tabindex="0" />
+        <div class="thumb thumb--video" data-type="video" tabindex="0" role="button" aria-label="Play video">
+          <span class="play-btn">▶</span>
+          <span class="play-label">PLAY VIDEO</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-content">
+      <section class="proj-section">
+        <h2 class="proj-section-title">OVERVIEW</h2>
+        <p>Empowered Reality is the branded VR gateway experience for the SkillsVR platform. Before learners begin any training module, they are immersed in a purpose-built environment that introduces them to VR interaction, spatial navigation, and the SkillsVR product identity.</p>
+        <p>The experience was designed to reduce learner anxiety around VR headsets — particularly for enterprise audiences encountering the technology for the first time — while reinforcing brand identity through environmental storytelling.</p>
+      </section>
+      <section class="proj-section">
+        <h2 class="proj-section-title">MY ROLE</h2>
+        <p>Lead developer. Responsible for all Unity implementation including environment setup, interaction systems, spatial audio integration, and performance optimisation for standalone Meta Quest delivery.</p>
+      </section>
+      <section class="proj-section">
+        <h2 class="proj-section-title">TECHNICAL HIGHLIGHTS</h2>
+        <ul class="proj-list">
+          <li>Built on Unity XR Interaction Toolkit — fully compatible with Meta Quest 2, 3, and Pro</li>
+          <li>Custom spatial audio rig using FMOD for immersive ambient design</li>
+          <li>Optimised to 72fps on standalone Quest hardware with zero frame drops</li>
+          <li>Dynamic LOD system and occlusion culling tuned for the environment scale</li>
+          <li>Integrated with the SkillsVR platform launcher — seamless session handoff</li>
+        </ul>
+      </section>
+      <div class="proj-details-grid">
+        <div class="proj-detail"><span class="detail-label">ENGINE</span><span class="detail-value">Unity (XR Toolkit)</span></div>
+        <div class="proj-detail"><span class="detail-label">LANGUAGE</span><span class="detail-value">C#</span></div>
+        <div class="proj-detail"><span class="detail-label">PLATFORM</span><span class="detail-value">Meta Quest 2/3</span></div>
+        <div class="proj-detail"><span class="detail-label">STATUS</span><span class="detail-value accent">SHIPPED</span></div>
+        <div class="proj-detail"><span class="detail-label">CLIENT</span><span class="detail-value">SkillsVR</span></div>
+        <div class="proj-detail"><span class="detail-label">TYPE</span><span class="detail-value">VR Experience</span></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <a href="dib.html" class="footer-next">NEXT PROJECT: DIB <span class="accent">→</span></a>
+  </footer>
+  <script src="project.js"></script>
+</body>
+</html>

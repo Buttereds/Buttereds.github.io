@@ -22,7 +22,16 @@
       "Bash(cmd.exe /c \"dir C:\\\\Users\\\\alexb\\\\OneDrive\\\\Desktop\\\\ClaudeProjects\\\\ClaudeTest\\\\serve.mjs C:\\\\Users\\\\alexb\\\\OneDrive\\\\Desktop\\\\ClaudeProjects\\\\ClaudeTest\\\\screenshot.mjs 2>&1\")",
       "Bash(node screenshot.mjs http://localhost:3000 homepage)",
       "Bash(cmd.exe /c \"dir /s /b C:\\\\Users\\\\alexb\\\\OneDrive\\\\Desktop\\\\ClaudeProjects\\\\ClaudeTest\\\\assets\\\\*.*\")",
-      "Bash(cmd.exe /c \"start C:\\\\Users\\\\alexb\\\\OneDrive\\\\Desktop\\\\ClaudeProjects\\\\ClaudeTest\\\\portfolio\\\\projects\\\\empowered-reality.html\")"
+      "Bash(cmd.exe /c \"start C:\\\\Users\\\\alexb\\\\OneDrive\\\\Desktop\\\\ClaudeProjects\\\\ClaudeTest\\\\portfolio\\\\projects\\\\empowered-reality.html\")",
+      "Bash(cp portfolio/index.html index.html)",
+      "Bash(cp portfolio/style.css style.css)",
+      "Bash(cp portfolio/script.js script.js)",
+      "Bash(mkdir -p projects)",
+      "Bash(cp portfolio/projects/* projects/)",
+      "Bash(sed -i 's|\"\"\\\\.\\\\./assets/|\"\"assets/|g' index.html)",
+      "Bash(sed -i \"s|''\\\\.\\\\./assets/|''assets/|g\" index.html)",
+      "Bash(sed -i 's|\"\"\\\\.\\\\./\\\\.\\\\./assets/|\"\"../assets/|g' projects/*.html)",
+      "Bash(sed -i \"s|''\\\\.\\\\./\\\\.\\\\./assets/|''../assets/|g\" projects/*.html)"
     ]
   }
 }
