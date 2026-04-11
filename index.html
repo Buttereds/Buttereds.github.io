@@ -13,371 +13,308 @@
 
   <!-- NAV -->
   <nav class="nav">
-    <span class="nav-logo">DEV<span class="accent">_</span></span>
-    <ul class="nav-links">
-      <li><a href="#work">WORK</a></li>
-      <li><a href="#about">ABOUT</a></li>
-      <li><a href="#skills">SKILLS</a></li>
-      <li><a href="#contact">CONTACT</a></li>
-    </ul>
+    <div class="nav-inner">
+      <span class="nav-logo">AB<span class="accent">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
   <!-- HERO -->
   <section class="hero" id="home">
-    <div class="hero-bg-text">
-      <span class="hero-bg-prefix" id="heroBgPrefix">VR</span>
-      <span class="hero-bg-dev">DEV</span>
-    </div>
 
-    <!-- Reaction test — desktop only -->
-    <div class="reaction-area" id="reactionArea">
-      <div class="reaction-field" id="reactionField"></div>
-    </div>
+    <!-- Reaction field — full hero background -->
+    <div class="reaction-field" id="reactionField"></div>
 
-    <div class="hero-content">
-      <p class="hero-label">// PORTFOLIO</p>
-      <h1 class="hero-name">ALEX<br><span class="accent">BURNIE</span></h1>
-      <p class="hero-title">XR / GAME DEVELOPER <span class="accent">•</span> VR/AR SPECIALIST</p>
+    <!-- Hero content — sits above the field -->
+    <div class="hero-inner">
+      <p class="hero-label">XR / Game Developer</p>
+      <h1 class="hero-name">Alex Burnie</h1>
+      <div class="hero-rule"></div>
+      <p class="hero-tagline">Nine years building immersive experiences that teach, train, and transform.</p>
       <div class="hero-cta">
-        <a href="#work" class="btn-primary">VIEW WORK</a>
-        <a href="#contact" class="btn-ghost">GET IN TOUCH</a>
+        <a href="#work" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
       </div>
     </div>
-    <div class="hero-stats">
-      <div class="stat">
-        <span class="stat-num accent">9</span>
-        <span class="stat-label">PROJECTS SHIPPED</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat">
-        <span class="stat-num accent">9</span>
-        <span class="stat-label">YEARS EXPERIENCE</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat">
-        <span class="stat-num accent">VR</span>
-        <span class="stat-label">SPECIALIST</span>
-      </div>
-      <div class="reaction-hud">
-        <span class="reaction-hud-avg" id="reactionAvg">AVG --ms</span>
-        <button class="reaction-reset" id="reactionReset" title="Reset">&#x21bb;</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- WORK -->
-  <section class="section" id="work">
-    <div class="section-header">
-      <span class="section-label">// 01</span>
-      <h2>SELECTED WORK</h2>
-    </div>
-    <div class="projects-carousel">
-
-      <!-- Left nav -->
-      <nav class="projects-nav">
-        <div class="proj-nav-category">VR / XR</div>
-
-        <button class="proj-nav-btn active" data-index="0">
-          <span class="proj-nav-num accent">01</span>
-          <span class="proj-nav-title">EMPOWERED REALITY</span>
-        </button>
-        <button class="proj-nav-btn" data-index="1">
-          <span class="proj-nav-num accent">02</span>
-          <span class="proj-nav-title">DIVERSITY, INCLUSION & BELONGING</span>
-        </button>
-        <button class="proj-nav-btn" data-index="2">
-          <span class="proj-nav-num accent">03</span>
-          <span class="proj-nav-title">COACHING CONVERSATIONS</span>
-        </button>
-        <button class="proj-nav-btn" data-index="3">
-          <span class="proj-nav-num accent">04</span>
-          <span class="proj-nav-title">BAG SEARCH &amp; WANDING</span>
-        </button>
-        <button class="proj-nav-btn" data-index="4">
-          <span class="proj-nav-num accent">05</span>
-          <span class="proj-nav-title">CONTENT CREATION KIT</span>
-        </button>
-
-        <div class="proj-nav-category">2D GAMES</div>
-
-        <button class="proj-nav-btn" data-index="5">
-          <span class="proj-nav-num accent">06</span>
-          <span class="proj-nav-title">TEAMWORK</span>
-        </button>
-        <button class="proj-nav-btn" data-index="6">
-          <span class="proj-nav-num accent">07</span>
-          <span class="proj-nav-title">TIME MANAGEMENT</span>
-        </button>
-        <button class="proj-nav-btn" data-index="7">
-          <span class="proj-nav-num accent">08</span>
-          <span class="proj-nav-title">FINANCIAL LITERACY</span>
-        </button>
-        <button class="proj-nav-btn" data-index="8">
-          <span class="proj-nav-num accent">09</span>
-          <span class="proj-nav-title">FOCUS</span>
-        </button>
-      </nav>
-
-      <!-- Right stage -->
-      <div class="projects-stage">
-
-        <!-- 01 EMPOWERED REALITY -->
-        <article class="project-slide active" data-index="0">
-          <div class="project-slide-text">
-            <div class="project-platform">VR EXPERIENCE — SKILLSVR</div>
-            <h3 class="project-title">EMPOWERED REALITY</h3>
-            <p class="project-desc">A branded VR onboarding experience built for SkillsVR. Immerses learners inside the platform environment — establishing presence and spatial confidence before any training begins.</p>
-            <div class="project-tags">
-              <span class="tag">Unity</span><span class="tag">C#</span>
-              <span class="tag">Meta Quest</span><span class="tag">VR UX</span>
-            </div>
-            <a href="projects/empowered-reality.html" class="project-link">VIEW PROJECT <span class="accent">→</span></a>
-          </div>
-          <div class="project-slide-image">
-            <img src="assets/EmpoweredReality/ER1.png" alt="Empowered Reality" />
-          </div>
-        </article>
-
-        <!-- 02 DIB -->
-        <article class="project-slide" data-index="1">
-          <div class="project-slide-text">
-            <div class="project-platform">VR SIMULATION — ENTERPRISE TRAINING</div>
-            <h3 class="project-title">DIVERSITY, INCLUSION &amp; BELONGING</h3>
-            <p class="project-desc">High-fidelity VR workplace simulation exploring unconscious bias and allyship. Learners navigate real social scenarios — a subway commute, office meetings — and experience situations from multiple perspectives.</p>
-            <div class="project-tags">
-              <span class="tag">Unity</span><span class="tag">C#</span>
-              <span class="tag">Narrative Design</span><span class="tag">Simulation</span>
-            </div>
-            <a href="projects/dib.html" class="project-link">VIEW PROJECT <span class="accent">→</span></a>
-          </div>
-          <div class="project-slide-image">
-            <img src="assets/DIB/DIB1.png" alt="DIB — subway scenario" />
-          </div>
-        </article>
-
-        <!-- 03 COACHING CONVERSATIONS -->
-        <article class="project-slide" data-index="2">
-          <div class="project-slide-text">
-            <div class="project-platform">VR SIMULATION — PROFESSIONAL DEVELOPMENT</div>
-            <h3 class="project-title">COACHING CONVERSATIONS</h3>
-            <p class="project-desc">AI-driven VR coaching simulator with photorealistic characters and branching dialogue. Learners practise difficult workplace conversations — feedback, conflict, reviews — with a character that responds to tone and word choice.</p>
-            <div class="project-tags">
-              <span class="tag">Unity</span><span class="tag">C#</span>
-              <span class="tag">AI NPC</span><span class="tag">Azure Speech</span>
-            </div>
-            <a href="projects/coaching-conversations.html" class="project-link">VIEW PROJECT <span class="accent">→</span></a>
-          </div>
-          <div class="project-slide-image">
-            <img src="assets/CoachingConversations/CC2.png" alt="Coaching Conversations" />
-          </div>
-        </article>
-
-        <!-- 04 BAG SEARCH & WANDING -->
-        <article class="project-slide" data-index="3">
-          <div class="project-slide-text">
-            <div class="project-platform">VR SIMULATION — SECURITY TRAINING</div>
-            <h3 class="project-title">BAG SEARCH &amp; WANDING</h3>
-            <p class="project-desc">Hands-on VR security training for venue and transport staff. Learners physically perform correct bag search and wand procedures in a realistic environment, with real-time technique assessment and LMS reporting.</p>
-            <div class="project-tags">
-              <span class="tag">Unity</span><span class="tag">C#</span>
-              <span class="tag">Meta Quest</span><span class="tag">xAPI / LMS</span>
-            </div>
-            <a href="projects/bag-search.html" class="project-link">VIEW PROJECT <span class="accent">→</span></a>
-          </div>
-          <div class="project-slide-image">
-            <img src="assets/BagSearchAndWanding/BSNW1.png" alt="Bag Search & Wanding" />
-          </div>
-        </article>
-
-        <!-- 05 CCK -->
-        <article class="project-slide" data-index="4">
-          <div class="project-slide-text">
-            <div class="project-platform">VR AUTHORING PLATFORM — TOOL</div>
-            <h3 class="project-title">CONTENT CREATION KIT</h3>
-            <p class="project-desc">A node-based VR scenario authoring platform that lets non-developers build and deploy interactive VR training experiences. Includes a scene browser, asset library, visual dialogue editor, and one-click Quest deployment.</p>
-            <div class="project-tags">
-              <span class="tag">Unity</span><span class="tag">C#</span>
-              <span class="tag">Node Editor</span><span class="tag">Tooling</span>
-            </div>
-            <a href="projects/cck.html" class="project-link">VIEW PROJECT <span class="accent">→</span></a>
-          </div>
-          <div class="project-slide-image">
-            <img src="assets/CCK/CCK 1.png" alt="Content Creation Kit — scene browser" />
-          </div>
-        </article>
-
-        <!-- 06 TEAMWORK -->
-        <article class="project-slide" data-index="5">
-          <div class="project-slide-text">
-            <div class="project-platform">2D GAME — TEAMWORK SKILLS</div>
-            <h3 class="project-title">TEAMWORK</h3>
-            <p class="project-desc">A stylised 2D platformer where players switch between three characters — each with a unique ability — to solve cooperative puzzles. Designed to reinforce the value of collaboration and complementary strengths in a team setting.</p>
-            <div class="project-tags">
-              <span class="tag">Unity</span><span class="tag">C#</span>
-              <span class="tag">2D Platformer</span>            </div>
-            <a href="projects/teamwork.html" class="project-link">VIEW PROJECT <span class="accent">→</span></a>
-          </div>
-          <div class="project-slide-image">
-            <img src="assets/Teamwork/TW 2.png" alt="Teamwork — gameplay" />
-          </div>
-        </article>
-
-        <!-- 07 TIME MANAGEMENT -->
-        <article class="project-slide" data-index="6">
-          <div class="project-slide-text">
-            <div class="project-platform">2D GAME — TIME MANAGEMENT SKILLS</div>
-            <h3 class="project-title">TIME MANAGEMENT</h3>
-            <p class="project-desc">A top-down day-planning game where players drag activities into a schedule before a real-time countdown expires. Teaches prioritisation, realistic task estimation, and the cost of over-committing — through play.</p>
-            <div class="project-tags">
-              <span class="tag">Unity</span><span class="tag">C#</span>
-              <span class="tag">2D</span>            </div>
-            <a href="projects/time-management.html" class="project-link">VIEW PROJECT <span class="accent">→</span></a>
-          </div>
-          <div class="project-slide-image">
-            <img src="assets/TimeManagement/TM 3.png" alt="Time Management — day plan gameplay" />
-          </div>
-        </article>
-
-        <!-- 08 FINANCIAL LITERACY -->
-        <article class="project-slide" data-index="7">
-          <div class="project-slide-text">
-            <div class="project-platform">2D GAME — FINANCIAL LITERACY</div>
-            <h3 class="project-title">FINANCIAL LITERACY</h3>
-            <p class="project-desc">Run Toni's Taco Truck from the ground up. Set menu prices, manage ingredient costs, hire staff, and serve customers — every decision feeds into a real P&L statement, making financial concepts concrete through play.</p>
-            <div class="project-tags">
-              <span class="tag">Unity</span><span class="tag">C#</span>
-              <span class="tag">Simulation</span>            </div>
-            <a href="projects/financial-literacy.html" class="project-link">VIEW PROJECT <span class="accent">→</span></a>
-          </div>
-          <div class="project-slide-image">
-            <img src="assets/FinancialLiteracy/FL 1.png" alt="Financial Literacy — map selection" />
-          </div>
-        </article>
-
-        <!-- 09 FOCUS -->
-        <article class="project-slide" data-index="8">
-          <div class="project-slide-text">
-            <div class="project-platform">2D GAME — FOCUS &amp; ATTENTION</div>
-            <h3 class="project-title">FOCUS</h3>
-            <p class="project-desc">A pixel-art 2D game that blends knowledge quiz questions with distraction management. Players must answer correctly while increasingly chaotic environments compete for their attention — simulating real cognitive load.</p>
-            <div class="project-tags">
-              <span class="tag">Unity</span><span class="tag">C#</span>
-              <span class="tag">2D</span>            </div>
-            <a href="projects/focus.html" class="project-link">VIEW PROJECT <span class="accent">→</span></a>
-          </div>
-          <div class="project-slide-image">
-            <img src="assets/Focus/F 2.png" alt="Focus — gameplay" />
-          </div>
-        </article>
-
-      </div><!-- /projects-stage -->
-    </div><!-- /projects-carousel -->
   </section>
 
   <!-- ABOUT -->
-  <section class="section section--alt" id="about">
-    <div class="section-header">
-      <span class="section-label">// 02</span>
-      <h2>ABOUT</h2>
-    </div>
-    <div class="about-grid">
-      <div class="about-text">
-        <p class="about-lead">I build worlds that <span class="accent">teach</span>.</p>
-        <p>Nine years specialising in VR/XR development — creating immersive simulations that change how people learn, practise, and perform in the real world.</p>
-        <p>From enterprise VR training platforms and AI-driven coaching simulations to stylised 2D games, I work across the full spectrum of interactive learning experiences. I care about the craft: presence, performance, and the moment a learner forgets they're wearing a headset.</p>
-        <p>Currently open to full-time roles and freelance contracts in VR/XR development.</p>
+  <section class="section" id="about">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">About</span>
       </div>
-      <div class="about-sidebar">
-        <div class="sidebar-item">
-          <span class="sidebar-label">BASED IN</span>
-          <span class="sidebar-value">New Zealand</span>
+      <div class="about-content">
+        <p class="about-lead">Calm architecture. Complex problems.</p>
+        <p>Nine years specialising in VR/XR development — creating immersive simulations that change how people learn, practise, and perform in the real world. From enterprise VR training platforms and AI-driven coaching simulations to stylised 2D games, I work across the full spectrum of interactive learning experiences.</p>
+        <p>I care about the craft: presence, performance, and the moment a learner forgets they're wearing a headset. Currently open to full-time roles and freelance contracts in VR/XR development.</p>
+      </div>
+      <div class="metrics-row">
+        <div class="metric">
+          <span class="metric-num">9+</span>
+          <span class="metric-label">Years Experience</span>
         </div>
-        <div class="sidebar-item">
-          <span class="sidebar-label">AVAILABLE FOR</span>
-          <span class="sidebar-value accent">HIRE</span>
+        <div class="metric">
+          <span class="metric-num">9+</span>
+          <span class="metric-label">Projects Shipped</span>
         </div>
-        <div class="sidebar-item">
-          <span class="sidebar-label">SPECIALITY</span>
-          <span class="sidebar-value">VR/XR & Game Dev</span>
+        <div class="metric">
+          <span class="metric-num">VR</span>
+          <span class="metric-label">Specialist</span>
         </div>
-        <div class="sidebar-item">
-          <span class="sidebar-label">PRIMARY ENGINE</span>
-          <span class="sidebar-value">Unity</span>
+      </div>
+      <div class="about-details">
+        <div class="about-detail">
+          <span class="about-detail-label">Based in</span>
+          <span class="about-detail-value">New Zealand</span>
+        </div>
+        <div class="about-detail">
+          <span class="about-detail-label">Speciality</span>
+          <span class="about-detail-value">VR/XR & Game Dev</span>
+        </div>
+        <div class="about-detail">
+          <span class="about-detail-label">Primary Engine</span>
+          <span class="about-detail-value">Unity</span>
+        </div>
+        <div class="about-detail">
+          <span class="about-detail-label">Status</span>
+          <span class="about-detail-value accent">Available for Hire</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SKILLS -->
-  <section class="section" id="skills">
-    <div class="section-header">
-      <span class="section-label">// 03</span>
-      <h2>SKILLS</h2>
+  <section class="section section--alt" id="skills">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">Skills</span>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4 class="skill-group-title">Engines</h4>
+          <ul class="skill-list">
+            <li>Unity</li>
+            <li>Unreal Engine 5</li>
+            <li>Godot</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">Languages</h4>
+          <ul class="skill-list">
+            <li>C#</li>
+            <li>C++</li>
+            <li>GDScript</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">VR / XR</h4>
+          <ul class="skill-list">
+            <li>Meta Quest 2 / 3 / Pro</li>
+            <li>OpenXR</li>
+            <li>Pico</li>
+            <li>Hand Tracking</li>
+            <li>Spatial Audio (FMOD)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">Disciplines</h4>
+          <ul class="skill-list">
+            <li>Simulation Design</li>
+            <li>Branching Narrative</li>
+            <li>AI NPC Systems</li>
+            <li>LMS / xAPI Integration</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">Tools</h4>
+          <ul class="skill-list">
+            <li>ClickUp</li>
+            <li>Source Control Software</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="skills-grid">
-      <div class="skill-group">
-        <h4 class="skill-group-title accent">ENGINES</h4>
-        <ul class="skill-list">
-          <li>Unity</li>
-          <li>Unreal Engine 5</li>
-          <li>Godot</li>
-        </ul>
+  </section>
+
+  <!-- WORK / PROJECTS -->
+  <section class="section" id="work">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">Projects</span>
       </div>
-      <div class="skill-group">
-        <h4 class="skill-group-title accent">LANGUAGES</h4>
-        <ul class="skill-list">
-          <li>C#</li>
-          <li>C++</li>
-          <li>GDScript</li>
-        </ul>
+
+      <!-- Filter tabs -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="vr">VR / XR</button>
+        <button class="filter-btn" data-filter="2d">2D Games</button>
       </div>
-      <div class="skill-group">
-        <h4 class="skill-group-title accent">VR / XR</h4>
-        <ul class="skill-list">
-          <li>Meta Quest 2 / 3 / Pro</li>
-          <li>OpenXR</li>
-          <li>Pico</li>
-          <li>Hand Tracking</li>
-          <li>Spatial Audio (FMOD)</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <h4 class="skill-group-title accent">DISCIPLINES</h4>
-        <ul class="skill-list">
-          <li>Simulation Design</li>
-          <li>Branching Narrative</li>
-          <li>AI NPC Systems</li>
-          <li>LMS / xAPI Integration</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <h4 class="skill-group-title accent">TOOLS</h4>
-        <ul class="skill-list">
-          <li>ClickUp</li>
-          <li>Source Control Software</li>
-        </ul>
+
+      <!-- Project cards grid -->
+      <div class="projects-grid">
+
+        <a href="projects/empowered-reality.html" class="project-card" data-category="vr">
+          <div class="card-image">
+            <img src="assets/EmpoweredReality/ER1.png" alt="Empowered Reality" />
+          </div>
+          <div class="card-body">
+            <span class="card-platform">VR Experience</span>
+            <h3 class="card-title">Empowered Reality</h3>
+            <p class="card-desc">A branded VR onboarding experience built for SkillsVR. Immerses learners inside the platform environment — establishing presence and spatial confidence before any training begins.</p>
+            <div class="card-tags">
+              <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Meta Quest</span>
+            </div>
+            <span class="card-link">View Project <span class="accent">→</span></span>
+          </div>
+        </a>
+
+        <a href="projects/dib.html" class="project-card" data-category="vr">
+          <div class="card-image">
+            <img src="assets/DIB/DIB1.png" alt="Diversity, Inclusion & Belonging" />
+          </div>
+          <div class="card-body">
+            <span class="card-platform">VR Simulation</span>
+            <h3 class="card-title">Diversity, Inclusion & Belonging</h3>
+            <p class="card-desc">High-fidelity VR workplace simulation exploring unconscious bias and allyship. Learners navigate real social scenarios and experience situations from multiple perspectives.</p>
+            <div class="card-tags">
+              <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Narrative Design</span>
+            </div>
+            <span class="card-link">View Project <span class="accent">→</span></span>
+          </div>
+        </a>
+
+        <a href="projects/coaching-conversations.html" class="project-card" data-category="vr">
+          <div class="card-image">
+            <img src="assets/CoachingConversations/CC2.png" alt="Coaching Conversations" />
+          </div>
+          <div class="card-body">
+            <span class="card-platform">VR Simulation</span>
+            <h3 class="card-title">Coaching Conversations</h3>
+            <p class="card-desc">AI-driven VR coaching simulator with photorealistic characters and branching dialogue. Learners practise difficult workplace conversations with a character that responds to tone and word choice.</p>
+            <div class="card-tags">
+              <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Azure Speech</span>
+            </div>
+            <span class="card-link">View Project <span class="accent">→</span></span>
+          </div>
+        </a>
+
+        <a href="projects/bag-search.html" class="project-card" data-category="vr">
+          <div class="card-image">
+            <img src="assets/BagSearchAndWanding/BSNW1.png" alt="Bag Search & Wanding" />
+          </div>
+          <div class="card-body">
+            <span class="card-platform">VR Simulation</span>
+            <h3 class="card-title">Bag Search & Wanding</h3>
+            <p class="card-desc">Hands-on VR security training for venue and transport staff. Learners physically perform correct bag search and wand procedures with real-time technique assessment.</p>
+            <div class="card-tags">
+              <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">xAPI / LMS</span>
+            </div>
+            <span class="card-link">View Project <span class="accent">→</span></span>
+          </div>
+        </a>
+
+        <a href="projects/cck.html" class="project-card" data-category="vr">
+          <div class="card-image">
+            <img src="assets/CCK/CCK 1.png" alt="Content Creation Kit" />
+          </div>
+          <div class="card-body">
+            <span class="card-platform">VR Authoring Platform</span>
+            <h3 class="card-title">Content Creation Kit</h3>
+            <p class="card-desc">A node-based VR scenario authoring platform that lets non-developers build and deploy interactive VR training experiences with a visual editor and one-click deployment.</p>
+            <div class="card-tags">
+              <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Node Editor</span>
+            </div>
+            <span class="card-link">View Project <span class="accent">→</span></span>
+          </div>
+        </a>
+
+        <a href="projects/teamwork.html" class="project-card" data-category="2d">
+          <div class="card-image">
+            <img src="assets/Teamwork/TW 2.png" alt="Teamwork" />
+          </div>
+          <div class="card-body">
+            <span class="card-platform">2D Platformer</span>
+            <h3 class="card-title">Teamwork</h3>
+            <p class="card-desc">A stylised 2D platformer where players switch between three characters — each with a unique ability — to solve cooperative puzzles reinforcing the value of collaboration.</p>
+            <div class="card-tags">
+              <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">2D Platformer</span>
+            </div>
+            <span class="card-link">View Project <span class="accent">→</span></span>
+          </div>
+        </a>
+
+        <a href="projects/time-management.html" class="project-card" data-category="2d">
+          <div class="card-image">
+            <img src="assets/TimeManagement/TM 3.png" alt="Time Management" />
+          </div>
+          <div class="card-body">
+            <span class="card-platform">2D Game</span>
+            <h3 class="card-title">Time Management</h3>
+            <p class="card-desc">A top-down day-planning game where players drag activities into a schedule before a real-time countdown expires. Teaches prioritisation and the cost of over-committing.</p>
+            <div class="card-tags">
+              <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">2D</span>
+            </div>
+            <span class="card-link">View Project <span class="accent">→</span></span>
+          </div>
+        </a>
+
+        <a href="projects/financial-literacy.html" class="project-card" data-category="2d">
+          <div class="card-image">
+            <img src="assets/FinancialLiteracy/FL 1.png" alt="Financial Literacy" />
+          </div>
+          <div class="card-body">
+            <span class="card-platform">Business Simulation</span>
+            <h3 class="card-title">Financial Literacy</h3>
+            <p class="card-desc">Run Toni's Taco Truck from the ground up. Set menu prices, manage ingredient costs, hire staff, and serve customers — every decision feeds into a real P&L statement.</p>
+            <div class="card-tags">
+              <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Simulation</span>
+            </div>
+            <span class="card-link">View Project <span class="accent">→</span></span>
+          </div>
+        </a>
+
+        <a href="projects/focus.html" class="project-card" data-category="2d">
+          <div class="card-image">
+            <img src="assets/Focus/F 2.png" alt="Focus" />
+          </div>
+          <div class="card-body">
+            <span class="card-platform">2D Game</span>
+            <h3 class="card-title">Focus</h3>
+            <p class="card-desc">A pixel-art 2D game that blends knowledge quiz questions with distraction management. Players must answer correctly while increasingly chaotic environments compete for their attention.</p>
+            <div class="card-tags">
+              <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">2D</span>
+            </div>
+            <span class="card-link">View Project <span class="accent">→</span></span>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section class="section section--alt" id="contact">
-    <div class="section-header">
-      <span class="section-label">// 04</span>
-      <h2>CONTACT</h2>
-    </div>
-    <div class="contact-layout">
-      <p class="contact-lead">Let's build something worth <span class="accent">experiencing</span>.</p>
-      <a href="mailto:alexburnie@hotmail.com" class="contact-email">alexburnie@hotmail.com</a>
-      <div class="contact-socials">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-label">Contact</span>
+      </div>
+      <div class="contact-layout">
+        <p class="contact-lead">Let's build something worth experiencing.</p>
+        <p class="contact-sub">Open to full-time roles and freelance contracts. Reach out and let's talk.</p>
+        <a href="mailto:alexburnie@hotmail.com" class="contact-email">alexburnie@hotmail.com</a>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <span>© 2026 ALEX BURNIE</span>
-    <span class="accent">VR/XR DEVELOPER</span>
+    <span>© 2026 Alex Burnie</span>
   </footer>
 
   <script src="script.js"></script>

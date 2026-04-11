@@ -1,11 +1,49 @@
-# Claude Instructions
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Skills
 **Always use the `frontend-design` skill** when working on any frontend task — components, pages, layouts, styles, or UI improvements. Invoke it before writing any frontend code.
 
-## Project: Game Developer Portfolio
+## Project Overview
 
-A personal portfolio website for a game developer. Located in `portfolio/`.
+Personal portfolio website for Alex Burnie, an XR/Game Developer. Hosted on GitHub Pages at `Buttereds.github.io`.
+
+## Development Server
+
+```bash
+node serve.mjs
+```
+
+Runs on `http://localhost:3000`. Root `/` redirects to `/portfolio/index.html`. Supports range requests for video streaming. No build step — plain HTML/CSS/JS served directly.
+
+Alternatively, double-click `START SERVER.bat` (opens browser automatically).
+
+## Architecture
+
+There are **two copies** of the site at the repo root:
+
+- **`portfolio/`** — the working/development copy (edit here)
+- **Root-level** (`index.html`, `style.css`, `script.js`, `projects/`) — deployed copy for GitHub Pages
+
+After making changes in `portfolio/`, copy files to root for deployment. GitHub Pages serves from repo root.
+
+### Key files (within `portfolio/` or root):
+- `index.html` — single-page portfolio (nav, hero, project carousel, about, skills, contact)
+- `style.css` — custom CSS, HUD-minimal aesthetic with black + electric cyan (`--accent: #00e5ff`)
+- `script.js` — project carousel, scroll reveal animations, reaction-time game, smooth scrolling
+- `projects/*.html` — individual project detail pages (each self-contained with own styles)
+- `projects/project.css` / `project.js` — shared styles/scripts for project detail pages
+
+### Assets
+- `assets/` — project screenshots/images organized by project name (e.g., `assets/BagSearchAndWanding/`)
+- Project pages reference assets via relative paths (`../assets/` from `projects/` dir)
+
+## Design System
+
+- **Fonts:** Share Tech Mono (headings/mono) + Barlow (body) via Google Fonts
+- **Colors:** Black background (`#080808`), electric cyan accent (`#00e5ff`), defined as CSS custom properties in `:root`
+- **Aesthetic:** HUD-minimal, game-developer themed
 
 ## Reference Images
 - If a reference image is provided: match layout, spacing, typography, and color exactly. Swap in placeholder content (images via `https://placehold.co/`, generic copy). Do not improve or add to the design.
